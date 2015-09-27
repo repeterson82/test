@@ -14,6 +14,11 @@
     		  "course.labs.permissions.DANGEROUS_ACTIVITY_PERM" 
           and "dangerous" protection level.
     -->
+    <permission
+        android:name="course.labs.permissions.DANGEROUS_ACTIVITY_PERM"
+        android:description="@string/dangerous_activity_string"
+        android:protectionLevel="dangerous">
+        </permission>
 
     <application
         android:allowBackup="true"
@@ -22,6 +27,8 @@
         android:theme="@style/AppTheme" >
 
         <!-- TODO - enforce the custom permission on this Activity -->
+        android:permission="course.labs.permissions.DANGEROUS_ACTIVITY_PERM" >
+        
 
         <activity
             android:name=".DangerousActivity"
