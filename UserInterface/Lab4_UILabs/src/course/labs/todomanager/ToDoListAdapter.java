@@ -98,8 +98,11 @@ public class ToDoListAdapter extends BaseAdapter {
 		// in the layout file
 
 		// TODO - Display Title in TextView
-		final TextView titleView = (TextView) itemLayout.findViewById(R.id.titleView);
-		titleView.setText(toDoItem.getTitle());
+		final TextView titleView;
+		titleView = (TextView) findViewById(R.id.titleView);
+		
+		//= (TextView) itemLayout.findViewById(R.id.titleView);
+		//titleView.setText(toDoItem.getTitle());
 
 
 		// TODO - Set up Status CheckBox
